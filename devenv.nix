@@ -2,7 +2,7 @@
 
 {
   languages.haskell = {
-    enable       = true;
-    cabal.enable = true;
+    enable        = true;
+    cabal.enable  = true;
   };
 }

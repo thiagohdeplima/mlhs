@@ -1,0 +1,35 @@
+name: mlhs
+version: 0.1.0.0
+license: BSD-3-Clause
+author: Thiago Henrique
+maintainer: thiagohdeplima@gmail.com
+category: Math
+
+extra-source-files: []
+
+ghc-options:
+  - -j
+  - +RTS -A128M -n2m -RTS
+  - -Werror
+  - -Wall
+  - -Wcompat
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wpartial-fields
+  - -Wredundant-constraints
+  - -Wincomplete-uni-patterns
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - AlgLin.Vector
+  dependencies:
+    - base >= 4.20.2.0
+
+executables:
+  mlhs:
+    source-dirs: app
+    main: Main.hs
+    dependencies:
+      - base >= 4.20.2.0
+      - mlhs
