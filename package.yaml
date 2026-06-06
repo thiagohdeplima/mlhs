@@ -22,9 +22,10 @@ ghc-options:
 library:
   source-dirs: src
   exposed-modules:
-    - AlgLin.Vector
+    - AlgLin
   dependencies:
     - base >= 4.20.2.0
+    - vector
 
 executables:
   mlhs:
@@ -33,3 +34,16 @@ executables:
     dependencies:
       - base >= 4.20.2.0
       - mlhs
+      - vector
+
+tests:
+  specs:
+    dependencies:
+      - base
+      - vector
+      - mlhs
+      - hspec
+      - QuickCheck
+    main: Spec.hs
+    source-dirs:
+      - test
