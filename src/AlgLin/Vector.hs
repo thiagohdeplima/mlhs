@@ -1,4 +1,0 @@
-module AlgLin.Vector
-    (
-    )
-where
