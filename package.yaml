@@ -23,6 +23,7 @@ library:
   source-dirs: src
   exposed-modules:
     - AlgLin
+    - Regression.Linear
   dependencies:
     - base >= 4.20.2.0
     - vector
