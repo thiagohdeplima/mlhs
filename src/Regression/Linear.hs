@@ -13,7 +13,7 @@ data Model = Model
 fit :: V.Vector Double -> V.Vector Double -> Model
 fit x y
   | lenX == 0 = error "the x vector must not be empty"
-  | lenY /= lenY = error "x and y must have the same length"
+  | lenY /= lenX = error "x and y must have the same length"
   | otherwise = Model { w0 = _w0, w1 = _w1, r2 = _r2}
   where
     lenX = V.length x
