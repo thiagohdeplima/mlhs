@@ -27,6 +27,7 @@ library:
   dependencies:
     - base >= 4.20.2.0
     - vector
+    - hmatrix
 
 executables:
   mlhs:

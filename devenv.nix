@@ -1,7 +1,12 @@
 { pkgs, lib, config, ... }:
 
 {
-  packages = with pkgs; [ git ];
+  packages = with pkgs; [
+    git
+    pkg-config
+    blas
+    lapack
+  ];
 
   languages.haskell = {
     enable        = true;
