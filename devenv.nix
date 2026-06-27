@@ -12,4 +12,12 @@
     enable        = true;
     cabal.enable  = true;
   };
+
+  scripts = {
+    "build-app" = {
+      exec = ''
+      hpack && cabal build
+      '';
+    };
+  };
 }
