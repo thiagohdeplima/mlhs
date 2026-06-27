@@ -18,3 +18,4 @@ spec =
       in do
         Linear.w0 model `shouldBe` 58.705515430072225
         Linear.w1 model `shouldBe` 1.463230466185161
+        Linear.r2 model `shouldBe` 4.215927918526452e-2
